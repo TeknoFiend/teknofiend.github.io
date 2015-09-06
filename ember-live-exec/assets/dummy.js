@@ -157,7 +157,8 @@ define('dummy/router', ['exports', 'ember', 'dummy/config/environment'], functio
   'use strict';
 
   var Router = Ember['default'].Router.extend({
-    location: config['default'].locationType
+    location: config['default'].locationType,
+    rootURL: '/ember-live-exec'
   });
 
   Router.map(function () {});
@@ -490,8 +491,8 @@ define('dummy/tests/app.jshint', function () {
   'use strict';
 
   module('JSHint - .');
-  test('app.js should pass jshint', function() { 
-    ok(true, 'app.js should pass jshint.'); 
+  test('app.js should pass jshint', function() {
+    ok(true, 'app.js should pass jshint.');
   });
 
 });
@@ -514,8 +515,8 @@ define('dummy/tests/helpers/resolver.jshint', function () {
   'use strict';
 
   module('JSHint - helpers');
-  test('helpers/resolver.js should pass jshint', function() { 
-    ok(true, 'helpers/resolver.js should pass jshint.'); 
+  test('helpers/resolver.js should pass jshint', function() {
+    ok(true, 'helpers/resolver.js should pass jshint.');
   });
 
 });
@@ -547,8 +548,8 @@ define('dummy/tests/helpers/start-app.jshint', function () {
   'use strict';
 
   module('JSHint - helpers');
-  test('helpers/start-app.js should pass jshint', function() { 
-    ok(true, 'helpers/start-app.js should pass jshint.'); 
+  test('helpers/start-app.js should pass jshint', function() {
+    ok(true, 'helpers/start-app.js should pass jshint.');
   });
 
 });
@@ -690,8 +691,8 @@ define('dummy/tests/integration/components/live-exec-output-test.jshint', functi
   'use strict';
 
   module('JSHint - integration/components');
-  test('integration/components/live-exec-output-test.js should pass jshint', function() { 
-    ok(true, 'integration/components/live-exec-output-test.js should pass jshint.'); 
+  test('integration/components/live-exec-output-test.js should pass jshint', function() {
+    ok(true, 'integration/components/live-exec-output-test.js should pass jshint.');
   });
 
 });
@@ -833,8 +834,8 @@ define('dummy/tests/integration/components/live-exec-template.js-test.jshint', f
   'use strict';
 
   module('JSHint - integration/components');
-  test('integration/components/live-exec-template.js-test.js should pass jshint', function() { 
-    ok(true, 'integration/components/live-exec-template.js-test.js should pass jshint.'); 
+  test('integration/components/live-exec-template.js-test.js should pass jshint', function() {
+    ok(true, 'integration/components/live-exec-template.js-test.js should pass jshint.');
   });
 
 });
@@ -976,8 +977,8 @@ define('dummy/tests/integration/components/live-exec-test.jshint', function () {
   'use strict';
 
   module('JSHint - integration/components');
-  test('integration/components/live-exec-test.js should pass jshint', function() { 
-    ok(true, 'integration/components/live-exec-test.js should pass jshint.'); 
+  test('integration/components/live-exec-test.js should pass jshint', function() {
+    ok(true, 'integration/components/live-exec-test.js should pass jshint.');
   });
 
 });
@@ -986,8 +987,8 @@ define('dummy/tests/router.jshint', function () {
   'use strict';
 
   module('JSHint - .');
-  test('router.js should pass jshint', function() { 
-    ok(true, 'router.js should pass jshint.'); 
+  test('router.js should pass jshint', function() {
+    ok(true, 'router.js should pass jshint.');
   });
 
 });
@@ -1003,8 +1004,8 @@ define('dummy/tests/test-helper.jshint', function () {
   'use strict';
 
   module('JSHint - .');
-  test('test-helper.js should pass jshint', function() { 
-    ok(true, 'test-helper.js should pass jshint.'); 
+  test('test-helper.js should pass jshint', function() {
+    ok(true, 'test-helper.js should pass jshint.');
   });
 
 });
