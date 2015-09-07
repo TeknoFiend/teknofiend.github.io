@@ -148,11 +148,11 @@ define('live-exec-demo/templates/application', ['exports'], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 1,
+              "line": 3,
               "column": 0
             },
             "end": {
-              "line": 10,
+              "line": 12,
               "column": 0
             }
           },
@@ -182,8 +182,8 @@ define('live-exec-demo/templates/application', ['exports'], function (exports) {
           return morphs;
         },
         statements: [
-          ["inline","live-exec-template",[],["source","\nName: {{input value=name}}\n\n{{#if name}}\n  <div>Hello, {{name}}.</div>\n{{/if}}\n  "],["loc",[null,[2,2],[8,5]]]],
-          ["content","live-exec-output",["loc",[null,[9,2],[9,22]]]]
+          ["inline","live-exec-template",[],["source","\nName: {{input value=name}}\n\n{{#if name}}\n  <div>Hello, {{name}}.</div>\n{{/if}}\n  "],["loc",[null,[4,2],[10,5]]]],
+          ["content","live-exec-output",["loc",[null,[11,2],[11,22]]]]
         ],
         locals: [],
         templates: []
@@ -199,7 +199,7 @@ define('live-exec-demo/templates/application', ['exports'], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 14,
+            "line": 16,
             "column": 0
           }
         },
@@ -210,6 +210,8 @@ define('live-exec-demo/templates/application', ['exports'], function (exports) {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("Try out any Ember template code you like in the textarea!\n\n");
+        dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -222,14 +224,13 @@ define('live-exec-demo/templates/application', ['exports'], function (exports) {
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(fragment,0,0,contextualElement);
-        morphs[1] = dom.createMorphAt(fragment,2,2,contextualElement);
-        dom.insertBoundary(fragment, 0);
+        morphs[0] = dom.createMorphAt(fragment,1,1,contextualElement);
+        morphs[1] = dom.createMorphAt(fragment,3,3,contextualElement);
         return morphs;
       },
       statements: [
-        ["block","live-exec",[],[],0,null,["loc",[null,[1,0],[10,14]]]],
-        ["content","outlet",["loc",[null,[13,0],[13,10]]]]
+        ["block","live-exec",[],[],0,null,["loc",[null,[3,0],[12,14]]]],
+        ["content","outlet",["loc",[null,[15,0],[15,10]]]]
       ],
       locals: [],
       templates: [child0]
@@ -585,7 +586,7 @@ catch(err) {
 if (runningTests) {
   require("live-exec-demo/tests/test-helper");
 } else {
-  require("live-exec-demo/app")["default"].create({"name":"live-exec-demo","version":"0.0.0+4efb96ff"});
+  require("live-exec-demo/app")["default"].create({"name":"live-exec-demo","version":"0.0.0+a62121c4"});
 }
 
 /* jshint ignore:end */
