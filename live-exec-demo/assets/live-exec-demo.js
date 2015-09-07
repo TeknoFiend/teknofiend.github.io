@@ -128,7 +128,7 @@ define('live-exec-demo/router', ['exports', 'ember', 'live-exec-demo/config/envi
 
   var Router = Ember['default'].Router.extend({
     location: config['default'].locationType,
-    rootURL: '/live-exec-demo'
+    rootURL: '/live-exec-demo/'
   });
 
   Router.map(function () {});
@@ -585,7 +585,7 @@ catch(err) {
 if (runningTests) {
   require("live-exec-demo/tests/test-helper");
 } else {
-  require("live-exec-demo/app")["default"].create({"name":"live-exec-demo","version":"0.0.0+c28643e5"});
+  require("live-exec-demo/app")["default"].create({"name":"live-exec-demo","version":"0.0.0+fb85f569"});
 }
 
 /* jshint ignore:end */
