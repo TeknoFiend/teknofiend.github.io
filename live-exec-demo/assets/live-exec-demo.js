@@ -585,7 +585,7 @@ catch(err) {
 if (runningTests) {
   require("live-exec-demo/tests/test-helper");
 } else {
-  require("live-exec-demo/app")["default"].create({"name":"live-exec-demo","version":"0.0.0+732a9acd"});
+  require("live-exec-demo/app")["default"].create({"name":"live-exec-demo","version":"0.0.0+4efb96ff"});
 }
 
 /* jshint ignore:end */
